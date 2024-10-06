@@ -508,11 +508,6 @@ function animateAsteroids() {
   atira.position.x = -50 + 250 * Math.cos(Date.now() * 0.0007);
   atira.position.z = 200 * Math.sin(Date.now() * 0.0007);        // Z axis for movement
 
-  // Ensure labels follow the asteroids
-  amorLabel.position.copy(amor.position);
-  apolloLabel.position.copy(apollo.position);
-  atenLabel.position.copy(aten.position);
-  atiraLabel.position.copy(atira.position);
 
   renderer.render(scene, camera);
 }
